@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <div class="audio">
+
+    </div>
+    <div class="container">
+      <h1>CURRENT TIME</h1>
+      <h2 id="timedis"></h2>
+    </div>
+    <div class="container">
+    <h1>TIME TO WAKE UP</h1>
+<div class="box">
+
+
+    <form class="form" action="index.html" method="post">
+      <div class="form-group form-inline">
+        <label for="">Desired time to wake</label>
+        <input type="number" name="00" value="" max="12" id="hour" class="form-control" placeholder="hour" >
+        <input type="number" name="00" value="" max="59" id="min" class="form-control" placeholder="minutes">
+        <input type="number" name="00" value="" max="59" id="sec" class="form-control" placeholder="seconds">
+        <select class="form-control" name="ampm" id="ampm">
+          <option value="am">am</option>
+          <option value="pm">pm</option>
+        </select>
+
+
+        <button type="submit" name="button" class="button btn-lg">SET</button>
+        <button type="button" name="button" id="stop" class="btn btn-lg btn-danger">STOP</button>
+      </div>
+    </form>
+</div>
+    </div>
+<script src="build/js/vendor.min.js" charset="utf-8"></script>
+<script src="build/js/app.js" charset="utf-8"></script>
+
+  </body>
+</html>
